@@ -4,16 +4,7 @@ A C++ emulator for a small instruction set. It runs 16-bit instructions from a b
 
 ## Build and run
 
-Use a C++17 compiler and CMake 3.16 or later. Run these commands from the repository root.
-
-```sh
-cmake -S . -B build
-cmake --build build
-./build/tiny_cpu_emulator examples/echo.bin examples/input.txt output.txt
-cmp examples/input.txt output.txt
-```
-
-The sample copies the input byte for byte. A successful `cmp` prints nothing. To run it in CLion, set the working directory to the repository root and pass `examples/echo.bin examples/input.txt output.txt` as program arguments.
+Use a C++17 compiler and CMake 3.16 or later.
 
 ## Example program
 
